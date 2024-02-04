@@ -1,17 +1,30 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react"
+import ReactDOM from "react-dom"
+import Header from "./Header.js"
+import { Footer } from "./Footer.js"
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+function Description () {
+  return (
+    <h1>Reasons I'm excited to learn React</h1>
+  )
+}
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
+function Reasons () {
+  return (
+    <ol>
+      <li>It's pretty librabry</li>
+      <li>It's Easier to learn</li>
+    </ol>
+  )
+}
+
+ReactDOM.render(
+
+<div>
+  <Header/>
+  <Description/> 
+  <Reasons/>
+  <Footer/>
+</div>
+,  document.getElementById("root") )
