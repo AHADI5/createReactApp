@@ -1,8 +1,9 @@
 import React from "react"
 import ReactDOM from "react-dom"
-import Header from "./Header.js"
-import { Footer } from "./Footer.js"
-
+import "./index.css";
+import Header from "./components/Header.js"
+import { Footer  } from "./components/Footer.js"
+import Reasons from "./components/Reasons.js"
 function Description () {
   return (
     <h1>Reasons I'm excited to learn React</h1>
@@ -10,14 +11,7 @@ function Description () {
 }
 
 
-function Reasons () {
-  return (
-    <ol>
-      <li>It's pretty librabry</li>
-      <li>It's Easier to learn</li>
-    </ol>
-  )
-}
+
 
 ReactDOM.render(
 

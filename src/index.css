@@ -1,3 +1,8 @@
+body  {
+    background-color: rgb(32, 31, 39);
+    color: white;
+}
+
 img {
     width: 50px;
 
@@ -5,6 +10,7 @@ img {
 nav {
     justify-content: space-between;
     align-items: center;
+    padding: 10px;
 }
 ul,nav {
     display: flex;
@@ -13,14 +19,28 @@ ul,nav {
 ul li  {
     list-style: none;
     padding:10px;
+    margin-top: 10px;
 }
 
 .footer {
-    background-color: blue;
-    color: white;
+   
     padding: 5px;
+    background-color: black;
 }
 
 nav {
-    background-color: azure;
+   background-color: black; 
+}
+
+ol li {
+    margin-top: 20px;
+}
+.logo-text {
+    display:  flex;
+    gap: 20px ;
+}
+
+p{
+    font-weight: 900;
+    font-size: 20px;
 }
